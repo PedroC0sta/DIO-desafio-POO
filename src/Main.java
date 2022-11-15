@@ -1,3 +1,4 @@
+import br.cm.dio.desafio.dominio.Conteudo;
 import br.cm.dio.desafio.dominio.Curso;
 import br.cm.dio.desafio.dominio.Mentoria;
 
@@ -5,6 +6,9 @@ import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
+        Conteudo conteudo = new Curso();
+        System.out.println(conteudo);
+
         Curso curso1 = new Curso();
         curso1.setTitulo("curso java");
         curso1.setDescricao("descrição curso java");
@@ -22,6 +26,5 @@ public class Main {
 
         System.out.println(curso1);
         System.out.println(curso2);
-        System.out.println(mentoria);
-    }
+        System.out.println(mentoria);}
 }
